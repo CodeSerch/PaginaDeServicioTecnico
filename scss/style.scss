@@ -103,6 +103,18 @@ i.itemIco{
   font-weight: bolder ;
 }
 
+div.servicios{
+  background-color: rgba(11, 204, 11, 0.664);
+  text-align: center;
+  padding: 25px;
+}
+
+div.final{
+  height: 400px;
+background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
+background-size: cover;
+}
+
 @media (max-width: 991px) {
   
 div.contenedor {
@@ -138,6 +150,9 @@ i.itemIco{
   font-size: 14px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+div.final{
+  height: 200px;
 }
 
 }
