@@ -71,6 +71,46 @@ img.imagenPrincipal {
   color: white;
 }
 
+div.servicios{
+  background-color: #3cc91181;
+  text-align: center;
+  padding: 40px;
+}
+
+div.itemList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: 50px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+}
+
+i.itemIco {
+  font-size: 128px;
+}
+
+.itemText {
+  margin-top: 60px;
+  font-weight: bolder;
+}
+
+div.final{
+  background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 991px) {
   div.contenedor {
     margin: 50px;
@@ -94,6 +134,29 @@ img.imagenPrincipal {
 
   div.principal {
     height: 150px;
+  }
+
+  div.item {
+    width: 200px;
+    margin: 20px;
+    padding: 5px;
+    padding-top: 10px;
+  }
+
+  i.itemIco {
+    font-size: 66px;
+    margin-top: 50px;
+  }
+
+  .itemText {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  div.final{
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
