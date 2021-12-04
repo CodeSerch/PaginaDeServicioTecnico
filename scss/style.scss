@@ -46,6 +46,10 @@ img.imagenPrincipal{
   text-shadow: 3px 3px 6px rgb(0, 0, 0);
 }
 
+.texto{
+  font-weight: bolder;
+}
+
 .topnav {
   background-color: $cyan;
   overflow: hidden;
@@ -70,4 +74,27 @@ img.imagenPrincipal{
 .topnav a.active {
   background-color: $cyanOscuro;
   color: white;
+}
+
+@media (max-width: 991px) {
+  
+div.contenedor {
+  margin: 50px;
+  align-items: center;
+  text-align: center;
+}
+img.imagenPrincipal{
+  width: 200px;
+  height: 130px;
+}
+.titulo {
+  font-size: 36px;
+  text-align: center;
+}
+.texto{
+  font-size: 18px;
+}
+div.principal {
+  height: 150px;
+}
 }
