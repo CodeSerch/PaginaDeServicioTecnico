@@ -108,6 +108,7 @@ div.final {
   height: 400px;
   background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
   background-size: cover;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 991px) {

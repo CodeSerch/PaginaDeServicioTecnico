@@ -6,6 +6,7 @@ $base-font-size: 16px;
 $cyan: rgb(0, 183, 255);
 $cyanClaro: rgb(74, 200, 250);
 $cyanOscuro: rgb(2, 143, 199);
+$shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
 
 body {
   font-size: $base-font-size;
@@ -21,22 +22,21 @@ div.principal {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: $shadow;
 }
 
 div.contenedor {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  align-items: center;
 }
 
-
-img.imagenPrincipal{
-    width: 480px;
-    height: 300px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+img.imagenPrincipal {
+  width: 480px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: $shadow;
 }
 
 .titulo {
@@ -46,14 +46,14 @@ img.imagenPrincipal{
   text-shadow: 3px 3px 6px rgb(0, 0, 0);
 }
 
-.texto{
+.texto {
   font-weight: bolder;
 }
 
 .topnav {
   background-color: $cyan;
   overflow: hidden;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: $shadow;
 }
 
 .topnav a {
@@ -76,83 +76,82 @@ img.imagenPrincipal{
   color: white;
 }
 
-div.itemList{
+div.itemList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-div.item{
+div.item {
   width: 300px;
   display: flex;
   flex-direction: column;
   padding: 50px;
   margin: 50px;
-  border: 2px solid gray ;
+  border: 2px solid gray;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: $shadow;
 }
 
-i.itemIco{
+i.itemIco {
   font-size: 128px;
 }
 
-.itemText{
+.itemText {
   margin-top: 60px;
-  font-weight: bolder ;
+  font-weight: bolder;
 }
 
-div.servicios{
+div.servicios {
   background-color: rgba(11, 204, 11, 0.664);
   text-align: center;
   padding: 25px;
 }
 
-div.final{
+div.final {
   height: 400px;
-background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
-background-size: cover;
+  background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
+  background-size: cover;
+  box-shadow: $shadow;
 }
 
 @media (max-width: 991px) {
-  
-div.contenedor {
-  margin: 50px;
-  align-items: center;
-  text-align: center;
-}
-img.imagenPrincipal{
-  width: 200px;
-  height: 130px;
-}
-.titulo {
-  font-size: 36px;
-  text-align: center;
-}
-.texto{
-  font-size: 18px;
-}
-div.principal {
-  height: 150px;
-}
-div.item{
-  width: 200px;
-  margin: 20px;
-  padding: 5px;
-  padding-top: 10px;
-}
-i.itemIco{
-  font-size: 66px;
-  margin-top: 50px;
-}
-.itemText{
-  font-size: 14px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-div.final{
-  height: 200px;
-}
-
+  div.contenedor {
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  img.imagenPrincipal {
+    width: 200px;
+    height: 130px;
+  }
+  .titulo {
+    font-size: 36px;
+    text-align: center;
+  }
+  .texto {
+    font-size: 18px;
+  }
+  div.principal {
+    height: 150px;
+  }
+  div.item {
+    width: 200px;
+    margin: 20px;
+    padding: 5px;
+    padding-top: 10px;
+  }
+  i.itemIco {
+    font-size: 66px;
+    margin-top: 50px;
+  }
+  .itemText {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  div.final {
+    height: 200px;
+  }
 }
