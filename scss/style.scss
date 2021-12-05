@@ -16,7 +16,7 @@ body {
 div.principal {
   display: flex;
   justify-content: center;
-  background-image: url("https://www.azteko.com.mx/wp-content/uploads/2019/06/reparando-computadora.jpg");
+  background-image: url("/imgs/reparando-computadora.jpg");
   padding-top: 50px * 2;
   padding-bottom: 100px;
   background-position: center;
@@ -25,18 +25,71 @@ div.principal {
   box-shadow: $shadow;
 }
 
+div.cuadroServicios {
+  border: gray solid 2px;
+  width: 720px;
+  align-self: center;
+  border-radius: 15px;
+  padding: 30px;
+  color: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1.serviciosH1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 35%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+}
+
 div.contenedor {
   display: flex;
+  flex-direction: column;
+  margin: 50px;
+  text-align: center;
   justify-content: center;
-  margin: 100px;
+}
+
+div.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+div.itemContenedor1 {
+  display: flex;
+  align-self: flex-end;
   align-items: center;
+  flex-direction: row;
+  border: gray solid 2px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: $shadow;
+}
+div.itemContenedor2 {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: row;
+  border: gray solid 2px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: $shadow;
 }
 
 img.imagenPrincipal {
   width: 480px;
   height: 300px;
   border-radius: 15px;
-  box-shadow: $shadow;
 }
 
 .titulo {
@@ -48,12 +101,33 @@ img.imagenPrincipal {
 
 .texto {
   font-weight: bolder;
+  margin: 30px;
 }
 
 .topnav {
   background-color: $cyan;
   overflow: hidden;
   box-shadow: $shadow;
+  
+  position: relative;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .topnav a {
@@ -116,6 +190,84 @@ div.final {
   box-shadow: $shadow;
 }
 
+//--form style--//
+.form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 240px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+h2.form1 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+input.form1 {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus.form1 {
+  border-bottom: 2px solid #78788c;
+}
+p:before.form1 {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+button.form1 {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover.form1 {
+  background: #78788c;
+  color: #fff;
+}
+div.form1 {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span.form1 {
+  margin: 0 5px 0 15px;
+}
+
+
+//--form style--//
+
 @media (max-width: 991px) {
   div.contenedor {
     margin: 50px;
@@ -132,9 +284,11 @@ div.final {
   }
   .texto {
     font-size: 18px;
+    margin: 20px;
   }
   div.principal {
     height: 150px;
+    align-items: center;
   }
   div.item {
     width: 200px;

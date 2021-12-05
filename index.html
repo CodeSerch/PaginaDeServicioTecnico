@@ -15,28 +15,45 @@
 
 <body>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Inicio</a>
-    <a href="#contact">Contacto</a>
-    </a>
-  </div>
-  <div class="principal mb-5">
-    <h1 class="titulo">Reparacion de PC y Laptops</h1>
-    <br />
-  </div>
+    <a href="/index.html" class="active"><i class="fas fa-home fa-1x"></i> Inicio</a>
+    <a href="/formulario/index.html" ><i class="far fa-envelope fa-1x"></i> Contacto</a>
+
+    <div class="topnav-centered">
+
+        <a href="/index.html"><i class="fas fa-desktop fa-1x"></i> Servicio Técnico Olavarría</a>
+    </div>
+</div>
+
+<div class="principal">
+  <h1><p class="titulo">Servicio Técnico Olavarría</p></h1>
+</div>
 
   <div class="contenedor">
+    
+  <h1 style="margin-bottom: 40px; font-weight: bolder;">Bienvenido!</h1>
+
+  <div class="cuadroServicios">
+  <h1 class="serviciosH1" style="font-weight: bolder;">Nuestros Servicios</h1>
+  </div>
+
+  <div class="itemContenedor1">
     <h2>
-      <p class="texto">Ofrecemos las mejores soluciones!</p>
+      <p class="texto">Reparacion y mantenimiento de Equipo!</p>
     </h2>
-    <img class="imagenPrincipal ms-5" src="https://itcarg.com/assets/img/cursos/diagnostico-y-mantenimiento-de-pc.jpg">
+    <img class="imagenPrincipal" src="imgs/DiagnosticoPc.jpg">
   </div>
 
-  <div class="contenedor">
-    <img class="imagenPrincipal me-5" src="https://i.ytimg.com/vi/8DDoFcsYEV0/maxresdefault.jpg"></img>
+  <div class="itemContenedor2">
+    <img class="imagenPrincipal" src="https://i.ytimg.com/vi/8DDoFcsYEV0/maxresdefault.jpg"></img>
     <h2>
       <p class="texto">Te ayudamos a armar tu compu Gamer!</p>
     </h2>
   </div>
+  <div>
+    <a href="formulario/index.html">
+      <button type="button" class="btn btn-primary">Formulario de Contacto</button></div>
+    </a>
+</div>
 
   <div class="final">
   </div>
@@ -45,7 +62,7 @@
     <div class="item">
       <i class="far fa-star itemIco"></i>
 
-      <p class="itemText">Mejora la velocidad de tu Pc</p>
+      <p class="itemText">Mejora la velocidad de lectura de tu Pc</p>
     </div>
     <div class="item">
       <i class="fas fa-clock itemIco"></i>
@@ -58,7 +75,7 @@
   </div>
 
   <div class="servicios">
-    <button type="button" class="btn btn-primary">Contratar Nuestros Servicios</button>
+    <button type="button" class="btn btn-primary" id="servicios">Contratar Nuestros Servicios</button>
   </div>
 
   <footer class="bg-dark text-center text-white">
@@ -119,8 +136,9 @@
       © 2021 Copyright:
       <a class="text-white" href="">sergioenriquebg28@gmail.com</a>
     </div>
-
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
