@@ -258,7 +258,12 @@ span.form1 {
   margin: 0 5px 0 15px;
 }
 
+
 @media (max-width: 991px) {
+  .topnav-centered a {
+    display: none;
+  }
+
   div.contenedor {
     margin: 50px;
     align-items: center;
@@ -305,6 +310,26 @@ span.form1 {
 
   div.final {
     height: 200px;
+  }
+
+  h1.serviciosH1 {
+    font-size: 36px;
+  }
+  div.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  div.cuadroServicios {
+    border: gray solid 2px;
+    width: 370px;
+    align-self: center;
+    border-radius: 15px;
+    padding: 15px;
+    color: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   }
 }
 
