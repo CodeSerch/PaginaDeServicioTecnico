@@ -1,13 +1,9 @@
 let fadeTime = 1000;
 
-$('h1').hide();
-$('.itemText').hide();
-$('.texto').hide();
+$('.titulo').hide();
 $( document ).ready(function() {
     console.log( "ready!" );
-    $('h1').show(fadeTime);
-    $('.itemText').show(fadeTime);
-    $('.texto').show(fadeTime);
+    $('.titulo').slideDown(fadeTime);
 });
 
 $("#servicios").click(() => {
