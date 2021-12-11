@@ -20,21 +20,11 @@ div.principal {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
 }
 
-div.cuadroServicios {
-  border: gray solid 2px;
-  width: 720px;
-  align-self: center;
-  border-radius: 15px;
-  padding: 30px;
-  color: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-}
-
 h1.serviciosH1 {
   font-size: 72px;
   background: -webkit-linear-gradient(90deg, #090979 0%, #00d4ff 35%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1px 1px 2px black);
 }
 
 div.contenedor {
@@ -43,6 +33,18 @@ div.contenedor {
   margin: 50px;
   text-align: center;
   justify-content: center;
+}
+
+div.nosotrosCon {
+  display: flex;
+  align-items: center;
+}
+
+div.taller {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: blue;
 }
 
 div.row1 {
@@ -92,20 +94,21 @@ img.imagenPrincipal {
 }
 
 .topnav {
-  background-color: #00b7ff;
   overflow: hidden;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
   position: relative;
-  background-color: #333;
+  background-color: #363636;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #ffffff;
+  display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 8px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .topnav-centered a {
@@ -114,16 +117,6 @@ img.imagenPrincipal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 .topnav a:hover {
@@ -174,6 +167,19 @@ div.final {
   background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
   background-size: cover;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .form {
@@ -258,12 +264,7 @@ span.form1 {
   margin: 0 5px 0 15px;
 }
 
-
 @media (max-width: 991px) {
-  .topnav-centered a {
-    display: none;
-  }
-
   div.contenedor {
     margin: 50px;
     align-items: center;
@@ -310,26 +311,6 @@ span.form1 {
 
   div.final {
     height: 200px;
-  }
-
-  h1.serviciosH1 {
-    font-size: 36px;
-  }
-  div.contenedor {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    text-align: center;
-    justify-content: center;
-  }
-
-  div.cuadroServicios {
-    border: gray solid 2px;
-    width: 370px;
-    align-self: center;
-    border-radius: 15px;
-    padding: 15px;
-    color: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   }
 }
 
