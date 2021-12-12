@@ -25,19 +25,6 @@ div.principal {
   box-shadow: $shadow;
 }
 
-div.cuadroServicios {
-  border: gray solid 2px;
-  width: 720px;
-  align-self: center;
-  border-radius: 15px;
-  padding: 30px;
-  color: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 
 h1.serviciosH1 {
   font-size: 72px;
@@ -48,7 +35,6 @@ h1.serviciosH1 {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
 }
 
 div.contenedor {
@@ -57,6 +43,16 @@ div.contenedor {
   margin: 50px;
   text-align: center;
   justify-content: center;
+}
+div.nosotrosCon{
+  display: flex;
+  align-items: center;
+}
+div.taller{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: blue;
 }
 
 div.row1 {
@@ -92,6 +88,7 @@ img.imagenPrincipal {
   border-radius: 15px;
 }
 
+
 .titulo {
   color: white;
   font-weight: bolder;
@@ -105,21 +102,23 @@ img.imagenPrincipal {
 }
 
 .topnav {
-  background-color: $cyan;
   overflow: hidden;
   box-shadow: $shadow;
   
   position: relative;
-  background-color: #333;
+  background-color: rgb(54, 54, 54);
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #ffffff;
+  display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 8px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: bold;
+
 }
 
 .topnav-centered a {
@@ -130,15 +129,6 @@ img.imagenPrincipal {
   transform: translate(-50%, -50%);
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
 .topnav a:hover {
   background-color: $cyanClaro;
@@ -147,7 +137,7 @@ img.imagenPrincipal {
 
 .topnav a.active {
   background-color: $cyanOscuro;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 div.itemList {
@@ -188,6 +178,18 @@ div.final {
   background-image: url("https://my4kwallpapers.com/wp-content/uploads/2021/06/Gaming-Wallpaper.jpg");
   background-size: cover;
   box-shadow: $shadow;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 //--form style--//
